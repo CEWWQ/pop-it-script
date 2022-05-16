@@ -1,0 +1,728 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("XDMASTER", "BloodTheme")
+local Tab     = Window:NewTab("dupe cash")
+local Section = Tab:NewSection("buy and sell")
+Section:NewButton("buy banana", "Buy banana (click every 0.500 millisecond idk)", function()
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe lolly ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe Rb Amogus", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe pop it ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Tab     = Window:NewTab("Inf dupe")
+local Section = Tab:NewSection("(Click every 0.10 seconds to avoid loosing cash)")
+Section:NewToggle("Auto Dupe Banana"  , "Dupe Banana", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait(0.2)
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.1)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+
+Section:NewToggle("Auto Dupe Lolly"  , "Dupe Lolly rainbow", function(state)
+            if state then
+                _G.on = true
+                
+                while _G.on == true do
+                    wait()
+                
+                wait(0.2)
+                local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                        local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                
+                wait(0.2)
+                
+                    end
+                    else
+                _G.on = false
+                        
+                    end
+                end)
+                
+              Section:NewToggle("Auto Dupe amogus"  , "Dupe Amogus", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+        
+        wait(0.2)
+        local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait(0.2)
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+        local Tab     = Window:NewTab("idk what comprar itens are?")
+                local Section = Tab:NewSection("Buy Stuff")
+                Section:NewButton("comprar the banana", "Buy Banana", function()
+                    local args = {
+                        [1] = "The banana"
+                    }
+                
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("Buy Rb Lolly", "Buy Rb Lolly", function()
+                    local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("compra pop rb", "Buy Rb popits", function()
+                    local args = {
+                        [1] = "Pop It Rainbow!"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar amogus rb", "comprar  Rb Amogus", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
+	local args = {
+		[1] = "Crystal Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar watermelon", "Buy Watermelon", function()
+	local args = {
+		[1] = "Watermelon"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("XDMASTER", "BloodTheme")
+local Tab     = Window:NewTab("dupe cash")
+local Section = Tab:NewSection("buy and sell")
+Section:NewButton("buy banana", "Buy banana (click every 0.500 millisecond idk)", function()
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe lolly ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe Rb Amogus", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe pop it ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Tab     = Window:NewTab("Inf dupe")
+local Section = Tab:NewSection("(Click every 0.10 seconds to avoid loosing cash)")
+Section:NewToggle("Auto Dupe Banana"  , "Dupe Banana", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait(0.2)
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.1)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+
+Section:NewToggle("Auto Dupe Lolly"  , "Dupe Lolly rainbow", function(state)
+            if state then
+                _G.on = true
+                
+                while _G.on == true do
+                    wait()
+                
+                wait(0.2)
+                local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                        local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                
+                wait(0.2)
+                
+                    end
+                    else
+                _G.on = false
+                        
+                    end
+                end)
+                
+              Section:NewToggle("Auto Dupe amogus"  , "Dupe Amogus", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+        
+        wait(0.2)
+        local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait(0.2)
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+        local Tab     = Window:NewTab("idk what comprar itens are?")
+                local Section = Tab:NewSection("Buy Stuff")
+                Section:NewButton("comprar the banana", "Buy Banana", function()
+                    local args = {
+                        [1] = "The banana"
+                    }
+                
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("Buy Rb Lolly", "Buy Rb Lolly", function()
+                    local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("compra pop rb", "Buy Rb popits", function()
+                    local args = {
+                        [1] = "Pop It Rainbow!"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar amogus rb", "comprar  Rb Amogus", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
+	local args = {
+		[1] = "Crystal Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar watermelon", "Buy Watermelon", function()
+	local args = {
+		[1] = "Watermelon"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("XDMASTER", "BloodTheme")
+local Tab     = Window:NewTab("dupe cash")
+local Section = Tab:NewSection("buy and sell")
+Section:NewButton("buy banana", "Buy banana (click every 0.500 millisecond idk)", function()
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe lolly ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe Rb Amogus", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe pop it ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Tab     = Window:NewTab("Inf dupe")
+local Section = Tab:NewSection("(Click every 0.10 seconds to avoid loosing cash)")
+Section:NewToggle("Auto Dupe Banana"  , "Dupe Banana", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait(0.2)
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.1)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+
+Section:NewToggle("Auto Dupe Lolly"  , "Dupe Lolly rainbow", function(state)
+            if state then
+                _G.on = true
+                
+                while _G.on == true do
+                    wait()
+                
+                wait(0.2)
+                local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                        local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                
+                wait(0.2)
+                
+                    end
+                    else
+                _G.on = false
+                        
+                    end
+                end)
+                
+              Section:NewToggle("Auto Dupe amogus"  , "Dupe Amogus", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+        
+        wait(0.2)
+        local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait(0.2)
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+        local Tab     = Window:NewTab("idk what comprar itens are?")
+                local Section = Tab:NewSection("Buy Stuff")
+                Section:NewButton("comprar the banana", "Buy Banana", function()
+                    local args = {
+                        [1] = "The banana"
+                    }
+                
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("Buy Rb Lolly", "Buy Rb Lolly", function()
+                    local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("compra pop rb", "Buy Rb popits", function()
+                    local args = {
+                        [1] = "Pop It Rainbow!"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar amogus rb", "comprar  Rb Amogus", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
+	local args = {
+		[1] = "Crystal Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("XDMASTER", "BloodTheme")
+local Tab     = Window:NewTab("dupe cash")
+local Section = Tab:NewSection("buy and sell")
+Section:NewButton("buy banana", "Buy banana (click every 0.500 millisecond idk)", function()
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "The banana"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe lolly ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Lolly Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe Rb Amogus", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("dupe pop it ", "Buy item dupe cash (click every 0.5 second)", function()
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+	local args = {
+		[1] = "Pop It Rainbow!"
+	}
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Tab     = Window:NewTab("Inf dupe")
+local Section = Tab:NewSection("(Click every 0.10 seconds to avoid loosing cash)")
+Section:NewToggle("Auto Dupe Banana"  , "Dupe Banana", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait(0.2)
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.1)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+
+Section:NewToggle("Auto Dupe Lolly"  , "Dupe Lolly rainbow", function(state)
+            if state then
+                _G.on = true
+                
+                while _G.on == true do
+                    wait()
+                
+                wait(0.2)
+                local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                        local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                
+                wait(0.2)
+                
+                    end
+                    else
+                _G.on = false
+                        
+                    end
+                end)
+                
+              Section:NewToggle("Auto Dupe amogus"  , "Dupe Amogus", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+        
+        wait(0.2)
+        local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                local args = {
+                [1] = "Amogus Rainbow"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        
+        wait(0.2)
+        
+            end
+            else
+        _G.on = false
+                
+            end
+        end)
+        
+        local Tab     = Window:NewTab("idk what comprar itens are?")
+                local Section = Tab:NewSection("Buy Stuff")
+                Section:NewButton("comprar the banana", "Buy Banana", function()
+                    local args = {
+                        [1] = "The banana"
+                    }
+                
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("Buy Rb Lolly", "Buy Rb Lolly", function()
+                    local args = {
+                        [1] = "Lolly Rainbow"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
+                
+                Section:NewButton("compra pop rb", "Buy Rb popits", function()
+                    local args = {
+                        [1] = "Pop It Rainbow!"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar amogus rb", "comprar  Rb Amogus", function()
+	local args = {
+		[1] = "Amogus Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
+	local args = {
+		[1] = "Crystal Rainbow"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("comprar watermelon", "Buy Watermelon", function()
+	local args = {
+		[1] = "Watermelon"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
